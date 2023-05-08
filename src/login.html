@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login - Regents School Bali</title>
+    <link rel="icon" type="image/x-icon" href="../assets/regents.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet">
+    <link href="styles/login.css" rel="stylesheet">
+    <script src="scripts/login.js" defer></script>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+      <div class="navbar">
+
+        <div class="logo nav-box">
+          <a href="../index.html"><img src="../assets/regents-icon.png" alt=""></a>
+        </div>
+
+          <ul id="primary-nav"  class="nav-menu nav-box">
+            <!-- <li><a href="../index.html">Home</a></li> -->
+            <li><a href="about.html">About</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="menu-login"><a href="../login-page/index.html">Sign in</a></li>
+          </ul>
+          <button class="nav-btn" id="open-menu-btn"><ion-icon name="menu-outline"></ion-icon></button>
+          <button class="nav-btn" id="close-menu-btn"><ion-icon name="close-outline"></ion-icon></button>
+           <a href="#">
+            <div class="nav-extra nav-box" id="add-pad">Sign in</div>
+          </a>
+
+      </div>
+    </nav>
+
+    <!-- login section -->
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form action="index.html" autocomplete="off" class="sign-in-form">
+              <div class="form-logo">
+                <img src="../assets/regents-logo-horizontal.png" alt="regents" />
+                <!-- <h4>regents</h4> -->
+              </div>
+
+              <div class="heading">
+                <h2>Welcome Back</h2>
+                <h6>Not registred yet?</h6>
+                <a href="#" class="toggle">Sign up</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+
+                <input type="submit" value="Sign In" class="sign-btn" />
+
+                <p class="text">
+                  <a href="#">Forgot password?</a>
+                </p>
+              </div>
+            </form>
+
+            <form action="index.html" autocomplete="off" class="sign-up-form">
+              <div class="form-logo">
+                <img src="../assets/regents-logo-horizontal.png" alt="regents" />
+                <!-- <h4>regents</h4> -->
+              </div>
+
+              <div class="heading">
+                <h2>Get Started</h2>
+                <h6>Already have an account?</h6>
+                <a href="#" class="toggle">Sign in</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+
+                <input type="submit" value="Sign Up" class="sign-btn" />
+
+                <p class="text">
+                  By signing up, I agree to the
+                  <a href="#">Terms of Services</a> and
+                  <a href="#">Privacy Policy</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="./img/image1.png" class="image img-1 show" alt="" />
+              <img src="./img/image2.png" class="image img-2" alt="" />
+              <img src="./img/image3.png" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Crafting a bright future</h2>
+                  <h2>Building futures together</h2>
+                  <h2>Learn at your own pace</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer">
+
+      <div class="container footer-container">
+        <div class="footer-header">
+          <h3>Nurturing Hearts,<br>Igniting Minds, and Creating Leaders.</h3>
+        </div>
+        <div class="footer-1">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="">About Regents</a></li>
+            <li><a href="https://twitter.com/regentsbali?lang=en">News & Community</a></li>
+            <li><a href="">Accreditation & Awards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-2">
+          <h4>CONTACTS</h4>
+          <ul>
+            <li><a href="">Contact Information</a></li>
+            <li><a href="">Feedback & Inquiries</a></li>
+            <li><a href="">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-3">
+          <h4>CAMPUS LIFE</h4>
+          <ul>
+            <li><a href="">Student Activities</a></li>
+            <li><a href="">Clubs & Organizations</a></li>
+            <li><a href="">Athletic & Sports</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-4">
+          <h4>EVENTS & ACTIVITIES</h4>
+          <ul>
+            <li><a href="">Upcoming Events</a></li>
+            <li><a href="">Extracurricular Activities</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-foot">
+          <div class="notice">
+            <div class="copyright">
+              <span>Regents</span> © Copyright 
+              <script>document.write(new Date().getFullYear())</script>
+              . All Rights Reserved.
+            </div>
+            <div class="policies">
+              <div class="privacy-policy"><a href="">Privacy Policy</a></div>
+              <div class="cookie-policy"><a href="">Cookie Policy</a></div>
+            </div>
+          </div>
+
+          <div class="socials-link">
+            <a href="https://twitter.com/regentsbali?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.instagram.com/regentsschoolbali/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.youtube.com/@RegentsSchoolBali/videos"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/regents-school-bali-6b0054148/"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <!-- ionicon package -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>

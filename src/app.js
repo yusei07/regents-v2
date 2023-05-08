@@ -68,13 +68,13 @@ function SmoothScroll(target, speed, smooth) {
   })();
 }
 
-window.addEventListener("DOMContentLoaded", init);
+// window.addEventListener("DOMContentLoaded", init);
 
 
 // type effect on hero span
 
 const hero_type = new Typed("#type-effect", {
-  strings: ["Future Leaders", "Dreamers", "World Changers"],
+  strings: ["Future Leaders", "Problem Solvers", "Global Innovators", "Inspired Creators", "Collaborative Scholars", "Collaborative Scholars"],
   typeSpeed: 70,
   backSpeed: 35,
   startDelay: 500,
@@ -96,6 +96,10 @@ var swiper = new Swiper(".mySwiper", {
   centerSlide: true,
   loop: true,
   fade: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -112,35 +116,46 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 })
+// issue : in dev tool using the toggle open/close, when going back to the normal screen
+// size it will not show the nav-menu bascially it acts as if it was 1024px meaning it still applies the media query
 
 
 
-// anime/reveal on scroll
-
+// reveal on scroll
+AOS.init({
+  once: true,
+})
 
 
 // show/hide menu
 
-// issue : in dev tool using the toggle open/close, when going back to the normal screen
-// size it will not show the nav-menu bascially it acts as if it was 1024px meaning it still applies the media query
 
 const menu = document.querySelector(".nav-menu")
 const menuOpenBtn = document.querySelector("#open-menu-btn")
 const menuCloseBtn = document.querySelector("#close-menu-btn")
-
+const menuSignIn = document.querySelector("#menu-login")
 
 menuOpenBtn.addEventListener('click', () => {
   menu.style.display = 'flex';
   menu.style.visibility = 'visible';
+
+  menuSignIn.style.display = 'inline-block';
+  menuSignIn.style.visibility = 'visible';
+
   menuCloseBtn.style.display = 'inline-block';
+  menuCloseBtn.style.visiblity = 'visible';
   menuOpenBtn.style.display = 'none';
 })
 
 const closeNav = () => {
   menu.style.display = 'none';
+  menu.style.visibility = 'hidden';
+
+  menuSignIn.style.display = 'none';
+  menuSignIn.style.visibility = 'visible';
+
   menuCloseBtn.style.display = 'none';
   menuOpenBtn.style.display = 'inline-block';
 }
 
 menuCloseBtn.addEventListener('click', closeNav)
-

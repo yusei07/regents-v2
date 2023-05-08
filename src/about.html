@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>About - Regents School Bali</title>
+    <link rel="icon" type="image/x-icon" href="../assets/regents.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet">
     <link href="styles/about.css" rel="stylesheet">
+    <!-- <script src="about.js" defer></script> -->
+    <!-- aos cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- navigation bar -->
     <nav>
-      <div class="container navbar">
+      <div class="navbar">
 
         <div class="logo nav-box">
           <a href="../index.html"><img src="../assets/regents-icon.png" alt=""></a>
@@ -18,47 +23,106 @@
           <ul id="primary-nav"  class="nav-menu nav-box">
             <!-- <li><a href="../index.html">Home</a></li> -->
             <li><a href="">About</a></li>
-            <li><a href="../academic">Academic</a></li>
-            <li><a href="../admission">Admission</a></li>
-            <li><a href="../contact">Contact</a></li>
-            <li id="menu-login"><a href="login-page/index.html">Sign in</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="menu-login"><a href="../login-page/index.html">Sign in</a></li>
           </ul>
           <button class="nav-btn" id="open-menu-btn"><ion-icon name="menu-outline"></ion-icon></button>
           <button class="nav-btn" id="close-menu-btn"><ion-icon name="close-outline"></ion-icon></button>
-          <div class="nav-extra nav-box">
-            <!-- <div class="search"> -->
-            <!--   <button><ion-icon name="search-outline"></ion-icon></button> -->
-            <!-- </div> -->
-            <a href="login-page/index.html">
-              <button id="acc-login">Sign in ᐳ</button>
-            </a>
-          </div>
+           <a href="login.html">
+            <div class="nav-extra nav-box" id="add-pad">Sign in</div>
+          </a>
 
       </div>
     </nav>
 
-
     <!-- main section -->
-
-    <header>
-      <div class="container header-container">
-        <div class="ellipse-1"></div>
-        <div class="header-left">
-          <div class="header-left-img">
-            <img src="assets/" alt="">
+    <header class="about">
+      <div class="container about-header-container radial-bg1">
+        <div class="about-header-left">
+          <div class="about-header-left-img">
+            <img src="../assets/regents-illustration 1.svg" alt="">
           </div>
-
         </div>
 
-        <div class="header-right">
-          <h1>We Create<br><span id="type-effect"></span></h1>
+        <div class="about-header-right">
+          <h1>Regents School Bali</h1>
+          <h3>Experience the future of education</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Discover our innovative approach to learning at Regents School Bali, where our faculty cultivates critical thinking, problem-solving, and creativity to prepare students for a changing world.
           </p>
         </div>
       </div>
     </header>
+
+    <!-- brief story section -->
+    <section class="story">
+      <div class="container story-container radial-bg1">
+        <div class="story-left">
+          <div class="story-text">
+            <h3>Our innovative school goes beyond lectures and textbooks, providing an engaging learning environment through project-based learning and real-world applications.</h3>
+            <h3>We inspire critical thinking, problem-solving, and collaboration, preparing students for an ever-changing world.</h3>
+            <h3>Join us in exploring new ways of learning and teaching, and creating an unlimited world of possibilities.</h3>
+          </div>
+        </div>
+        <div class="story-right">
+          <img src="../assets/child-3d 1.svg" alt="">
+        </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- card section -->
+    <section class="objective">
+      <div class="container objective-container">
+
+          <div class="values card" data-aos="fade-right" data-aos-duration="1000">
+            <h4>VALUES</h4>
+            <p>We prioritize and instill the values of love, respect, integrity, and lifelong learning in our students.</p>
+            <img src="../assets/Saly-42.svg" alt="">
+          </div>
+
+          <div class="vision card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+            <h4>VISION</h4>
+            <p>We are committed to offering a top-tier education that prepares our students to become future leaders.</p>
+            <img src="../assets/Saly-31.svg" alt="">
+          </div>
+
+          <div class="mission card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+            <h4>MISSION</h4>
+            <p>We offer high-quality academics, nurtures good character, and teaches appreciation for art, music, and culture in a loving environment while partnering with parents.</p>
+            <img src="../assets/Saly-18.svg" alt="">
+          </div>
+
+      </div>
+    </section>
+
+    <!-- partner section -->
+    <section class="partner">
+      <div class="container partner-container">
+        <div class="partner-text">
+          <div class="partner-title"><h2>Collaborating to inspire learning</h2></div>
+          <div class="partner-subtitle"><p>Our partnership with these esteemed organizations allows us to provide our students with an exceptional education and prepare them for a bright future.</p></div>
+        </div>
+        <div class="partner-box">
+
+          <div class="partner-1">
+            <img src="../assets/cambridge-logo.svg" alt="">
+          </div>
+          <div class="partner-2">
+            <img src="../assets/leaderinme-logo..svg" alt="">
+          </div>
+          <div class="partner-3">
+            <img src="../assets/quintal-logo.svg" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
 
     <!-- footer section -->
     <footer class="footer">
@@ -129,6 +193,13 @@
     <!-- ionicon package -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- aos lib -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+      AOS.init({
+        once: true,
+      })
+    </script>
   </body>
 </html>

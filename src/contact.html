@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact - Regents School Bali</title>
+    <link rel="icon" type="image/x-icon" href="../assets/regents.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet">
+    <link href="styles/contact.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+      <div class="navbar">
+
+        <div class="logo nav-box">
+          <a href="../index.html"><img src="../assets/regents-icon.png" alt=""></a>
+        </div>
+
+          <ul id="primary-nav"  class="nav-menu nav-box">
+            <!-- <li><a href="../index.html">Home</a></li> -->
+            <li><a href="about.html">About</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="menu-login"><a href="../login-page/index.html">Sign in</a></li>
+          </ul>
+          <button class="nav-btn" id="open-menu-btn"><ion-icon name="menu-outline"></ion-icon></button>
+          <button class="nav-btn" id="close-menu-btn"><ion-icon name="close-outline"></ion-icon></button>
+           <a href="login.html">
+            <div class="nav-extra nav-box" id="add-pad">Sign in</div>
+          </a>
+
+      </div>
+    </nav>
+
+    <!-- main section -->
+    <section class="contact">
+      <div class="container contact-container"> <!-- add radial-bg1 here -->
+
+        <aside class="contact-aside">
+          <div class="aside-img">
+            <img src="../assets/Saly-12.svg" alt="">
+          </div>
+          <h2>Get in touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do magna aliqua.
+          </p>
+          <ul class="contact-details">
+            <li>
+              <ion-icon name="call-outline"></ion-icon>
+              <h5>+62 361 449 3499</h5>
+            </li>
+
+            <li>
+              <ion-icon name="mail-outline"></ion-icon>
+              <h5>secondary@regentsschoolbali.com</h5>
+            </li>
+
+            <li>
+              <ion-icon name="location-outline"></ion-icon>
+              <h5>Jl. Waribang 20, Kesiman Petilan, Denpasar Timur - Bali</h5>
+            </li>
+          </ul>
+
+          <ul class="contact-socials">
+            <li><a id="whatsapp"><ion-icon name="logo-whatsapp"></ion-icon></a></li>            
+            <li><a href="href="mailto:secondary@regentsschoolbali.com"><ion-icon name="mail-unread-outline"></ion-icon></a></li>
+            <!-- mailto:?Subject={text}&body={text} -->
+          </ul>
+        </aside>
+
+        <form class="contact-form">
+          <div class="form-name">
+            <input type="text" name="First Name" placeholder="First Name" required>
+            <input type="text" name="Last Name" placeholder="Last Name" required>
+          </div>
+          <input type="email" name="Email Address" placeholder="Your Email Address" required>
+          <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- footer section -->
+    <footer class="footer">
+
+      <div class="container footer-container">
+        <div class="footer-header">
+          <h3>Nurturing Hearts,<br>Igniting Minds, and Creating Leaders.</h3>
+        </div>
+        <div class="footer-1">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="">About Regents</a></li>
+            <li><a href="https://twitter.com/regentsbali?lang=en">News & Community</a></li>
+            <li><a href="">Accreditation & Awards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-2">
+          <h4>CONTACTS</h4>
+          <ul>
+            <li><a href="">Contact Information</a></li>
+            <li><a href="">Feedback & Inquiries</a></li>
+            <li><a href="">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-3">
+          <h4>CAMPUS LIFE</h4>
+          <ul>
+            <li><a href="">Student Activities</a></li>
+            <li><a href="">Clubs & Organizations</a></li>
+            <li><a href="">Athletic & Sports</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-4">
+          <h4>EVENTS & ACTIVITIES</h4>
+          <ul>
+            <li><a href="">Upcoming Events</a></li>
+            <li><a href="">Extracurricular Activities</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-foot">
+          <div class="notice">
+            <div class="copyright">
+              <span>Regents</span> © Copyright 
+              <script>document.write(new Date().getFullYear())</script>
+              . All Rights Reserved.
+            </div>
+            <div class="policies">
+              <div class="privacy-policy"><a href="">Privacy Policy</a></div>
+              <div class="cookie-policy"><a href="">Cookie Policy</a></div>
+            </div>
+          </div>
+
+          <div class="socials-link">
+            <a href="https://twitter.com/regentsbali?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.instagram.com/regentsschoolbali/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.youtube.com/@RegentsSchoolBali/videos"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/regents-school-bali-6b0054148/"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- ionicon package -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+    const weblink = encodeURI(window.location.href);
+    const msg = encodeURIComponent('Hellow regents school! i\'d like to ask a question');
+    // const title = encodeURIComponent('Title Here');
+
+    // const fb = document.querySelector('.facebook');
+    // fb.href = `https://www.facebook.com/share.php?u=${weblink}`;
+
+    // const twitter = document.querySelector('.twitter');
+    // twitter.href = `http://twitter.com/share?&url=${weblink}&text=${msg}&hashtags=javascript,programming`;
+
+    // const linkedIn = document.querySelector('.linkedin');
+    // linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${weblink}`;
+
+    const whatsapp = document.querySelector('#whatsapp');
+    whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${weblink}`;
+
+    </script>
+
+  </body>
+</html>
