@@ -586,6 +586,7 @@ span.swiper-pagination-bullet {
     backdrop-filter: blur(1rem);
     visibility: hidden;
     /* transition: animateNavItems 350ms ease-out; */
+    height: 100%;
   }
 
   .nav-menu li {
@@ -718,7 +719,7 @@ span.swiper-pagination-bullet {
   }
 
   .nav-menu {
-    margin-bottom: 15rem;
+    /* margin-bottom: 15rem; */
   }
 
   /* temp solution to make nav menu center */
