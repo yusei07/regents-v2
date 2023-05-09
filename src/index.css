@@ -558,7 +558,7 @@ span.swiper-pagination-bullet {
 
   nav button {
     position: absolute;
-    right: 1rem;
+    right: 0.7rem;
     display: inline-block;
     background: transparent;
     font-size: 1.8rem;
@@ -585,11 +585,38 @@ span.swiper-pagination-bullet {
     background: hsl( 0 0% 100% / 0.5);
     backdrop-filter: blur(1rem);
     visibility: hidden;
-    /* transition: transform 350ms ease-out; */
+    /* transition: animateNavItems 350ms ease-out; */
   }
 
   .nav-menu li {
     width: 100%;
+    animation: animateNavItems 1s ease-in-out;
+  }
+
+  .nav-menu li:nth-child(2) {
+    animation: animateNavItems 2s ease-in-out;
+  }
+
+  .nav-menu li:nth-child(3) {
+    animation: animateNavItems 2s ease-in-out;
+  }
+
+  .nav-menu li:nth-child(4) {
+    animation: animateNavItems 2s ease-in-out;
+  }
+
+  .nav-menu li:nth-child(5) {
+    animation: animateNavItems 2s ease-in-out;
+  }
+
+  @keyframes animateNavItems {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 
   .nav-menu li a {
@@ -686,12 +713,21 @@ span.swiper-pagination-bullet {
   }
 
   /* ----------- navbar section ----------- */
+  nav {
+    width: 100vw;
+  }
 
+  .nav-menu {
+    margin-bottom: 15rem;
+  }
+
+  /* temp solution to make nav menu center */
 
   /* ----------- hero section ----------- */
 
   header {
     height: 100%; /* or vh (?) */
+    /* width: 100vw; */
   }
 
   .header-container {
@@ -712,9 +748,13 @@ span.swiper-pagination-bullet {
   }
   
   .header-right-img img {
-    width: 23rem;
-    height: 25rem;
+    width: 20rem;
+    height: 23rem;
   }
+
+  /* .radial-bg1 { */
+  /*   overflow-x: hidden; */
+  /* } */
 
   /* ----------- intro section ----------- */
 
@@ -731,7 +771,7 @@ span.swiper-pagination-bullet {
   }
 
   .intro-img img {
-    width: 25rem;
+    width: 22rem;
   }
 
   /* ----------- intro vid section ----------- */
@@ -739,6 +779,7 @@ span.swiper-pagination-bullet {
 
   .intro-vid-container {
     grid-template-columns: 1fr;
+    justify-content: center;
     padding-bottom: 5rem;
     padding-top: 8rem;
   }
@@ -771,8 +812,8 @@ span.swiper-pagination-bullet {
 
   .intro-vid-iframe {
     margin-top: -14rem;
-    width: 30rem;
-    height: 20rem;
+    width: 25rem;
+    height: 18rem;
   }
 
   .intro-vid-item:nth-child(1) {
