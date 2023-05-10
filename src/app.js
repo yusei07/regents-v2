@@ -125,6 +125,13 @@ AOS.init({
 
 // show/hide menu
 
+function disableScroll() {
+  document.body.style.overflow = 'hidden';
+}
+
+function enableScroll() {
+  document.body.style.overflow = '';
+}
 // issue : in dev tool using the toggle open/close, when going back to the normal screen
 // size it will not show the nav-menu bascially it acts as if it was 1024px meaning it still applies the media query
 
@@ -143,6 +150,7 @@ menuOpenBtn.addEventListener('click', () => {
   menuCloseBtn.style.display = 'inline-block';
   menuCloseBtn.style.visiblity = 'visible';
   menuOpenBtn.style.display = 'none';
+  disableScroll()
 })
 
 const closeNav = () => {
@@ -154,6 +162,7 @@ const closeNav = () => {
 
   menuCloseBtn.style.display = 'none';
   menuOpenBtn.style.display = 'inline-block';
+  enableScroll()
 }
 
 menuCloseBtn.addEventListener('click', closeNav)

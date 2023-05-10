@@ -173,6 +173,7 @@
   gap: 1rem;
   margin-bottom: 2rem;
   width: 45rem;
+  text-align: center;
 }
 
 .partner-title {
@@ -182,7 +183,6 @@
 
 .partner-subtitle {
   color: var(--primaryColor2);
-  text-align: center;
 }
 
 .partner-box {
@@ -304,10 +304,14 @@
     justify-content: center;
     place-items: center;
     gap: 1.5rem;
+    width: 100%;
   }
 
   .about-header-left {
     order: 2;
+    width: var(--container-width-sm);
+    display: flex;
+    justify-content: center;
   }
 
   .about-header-left img {
@@ -317,6 +321,7 @@
   .about-header-right {
     width: 99%;
     text-align: center;
+    width: var(--container-width-sm);
   }
 
   /* ----------- history section ----------- */
@@ -326,6 +331,12 @@
 
   .story-container {
     grid-template-columns: 1fr;
+    place-items: center;
+    width: 100%;
+  }
+
+  .story-left {
+    width: var(--container-width-sm);
   }
 
   .story-right {
@@ -338,21 +349,27 @@
   }
 
   .card {
-    width: 27rem;
+    width: var(--container-width-sm);
+  }
+
+  .card p {
+    width: 100%;
   }
 
   /* ----------- partner section ----------- */
   .partner {
     margin: 7rem 0;
   }
-  
-  .partner-subtitle {
-    width: 25rem;
-  }
 
+  .partner-text,
   .partner-box {
-    width: 25rem;
+    width: var(--container-width-sm);
   }
+  
+  /* .partner-subtitle { */
+  /*   width: 25rem; */
+  /* } */
+
 
   .partner-box img {
     width: 5rem;

@@ -22,11 +22,11 @@
 
           <ul id="primary-nav"  class="nav-menu nav-box">
             <!-- <li><a href="../index.html">Home</a></li> -->
-            <li><a href="">About</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="admission.html">Admission</a></li>
             <li><a href="academic.html">Academic</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li id="menu-login"><a href="../login-page/index.html">Sign in</a></li>
+            <li id="menu-login"><a href="login.html">Sign in</a></li>
           </ul>
           <button class="nav-btn" id="open-menu-btn"><ion-icon name="menu-outline"></ion-icon></button>
           <button class="nav-btn" id="close-menu-btn"><ion-icon name="close-outline"></ion-icon></button>
@@ -197,6 +197,36 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+      const menu = document.querySelector(".nav-menu")
+      const menuOpenBtn = document.querySelector("#open-menu-btn")
+      const menuCloseBtn = document.querySelector("#close-menu-btn")
+      const menuSignIn = document.querySelector("#menu-login")
+
+      menuOpenBtn.addEventListener('click', () => {
+        menu.style.display = 'flex';
+        menu.style.visibility = 'visible';
+
+        menuSignIn.style.display = 'inline-block';
+        menuSignIn.style.visibility = 'visible';
+
+        menuCloseBtn.style.display = 'inline-block';
+        menuCloseBtn.style.visiblity = 'visible';
+        menuOpenBtn.style.display = 'none';
+      })
+
+      const closeNav = () => {
+        menu.style.display = 'none';
+        menu.style.visibility = 'hidden';
+
+        menuSignIn.style.display = 'none';
+        menuSignIn.style.visibility = 'visible';
+
+        menuCloseBtn.style.display = 'none';
+        menuOpenBtn.style.display = 'inline-block';
+      }
+
+      menuCloseBtn.addEventListener('click', closeNav)
+
       AOS.init({
         once: true,
       })

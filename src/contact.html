@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="index.css" rel="stylesheet">
     <link href="styles/contact.css" rel="stylesheet">
+    <script src="scripts/contact.js" defer></script>
   </head>
   <body>
     <!-- navigation bar -->
@@ -22,8 +23,8 @@
             <li><a href="about.html">About</a></li>
             <li><a href="admission.html">Admission</a></li>
             <li><a href="academic.html">Academic</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li id="menu-login"><a href="../login-page/index.html">Sign in</a></li>
+            <li><a href="#">Contact</a></li>
+            <li id="menu-login"><a href="login.html">Sign in</a></li>
           </ul>
           <button class="nav-btn" id="open-menu-btn"><ion-icon name="menu-outline"></ion-icon></button>
           <button class="nav-btn" id="close-menu-btn"><ion-icon name="close-outline"></ion-icon></button>
@@ -153,24 +154,6 @@
     <!-- ionicon package -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
-    const weblink = encodeURI(window.location.href);
-    const msg = encodeURIComponent('Hellow regents school! i\'d like to ask a question');
-    // const title = encodeURIComponent('Title Here');
-
-    // const fb = document.querySelector('.facebook');
-    // fb.href = `https://www.facebook.com/share.php?u=${weblink}`;
-
-    // const twitter = document.querySelector('.twitter');
-    // twitter.href = `http://twitter.com/share?&url=${weblink}&text=${msg}&hashtags=javascript,programming`;
-
-    // const linkedIn = document.querySelector('.linkedin');
-    // linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${weblink}`;
-
-    const whatsapp = document.querySelector('#whatsapp');
-    whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${weblink}`;
-
-    </script>
 
   </body>
 </html>

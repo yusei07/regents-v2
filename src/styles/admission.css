@@ -131,19 +131,20 @@ mark {
   #admission .admission-container {
     height: 100vh;
     width: 100%;
-    padding-top: 0;
   }
 
   .admission-text {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     width: var(--container-width-sm);
-    margin-bottom: 6rem;
+    margin-bottom: 0;
   }
 
   .child-intro-img {
     width: var(--container-width-sm);
-    left: -26%;
+    display: flex;
+    justify-content: center;
+    /* left: -26%; */
   }
 
   .child-intro-img img {
@@ -161,5 +162,4 @@ mark {
     width: 140%;
     height: 100%;
   }
-
 }

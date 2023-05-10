@@ -255,9 +255,12 @@
   .academic-container {
     grid-template-columns: 1fr;
     background: linear-gradient(180.45deg, #A9B8EE -4.79%, rgba(217, 217, 217, 0) 134.88%);
+    width: 100%;
+    justify-content: center;
   }
 
   .academic-header-left {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -266,8 +269,18 @@
     margin-top: 2.5rem;
   }
 
+  .academic-text {
+    width: 85%;
+  }
+
+  .academic-text h1 {
+  }
+
+  .academic-text p {
+  }
+
   .academic-header-right {
-    background: blue;
+    /* background: blue; */
   }
 
   .academic-header-right img {

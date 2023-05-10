@@ -820,15 +820,15 @@ span.swiper-pagination-bullet {
 
   .intro-vid-deco {
     top: -12.5%;
-    left: 34%;
+    left: 36%;
   }
 
   .intro-vid-deco img {
-    width: 10rem;
+    width: 9rem;
   }
 
   .intro-vid-iframe {
-    margin-top: -13rem;
+    margin-top: -12rem;
     width: 25rem;
     height: 18rem;
   }
