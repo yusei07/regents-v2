@@ -74,7 +74,7 @@ function SmoothScroll(target, speed, smooth) {
 // type effect on hero span
 
 const hero_type = new Typed("#type-effect", {
-  strings: ["Future Leaders", "Problem Solvers", "Global Innovators", "Inspired Creators", "Collaborative Scholars", "Collaborative Scholars"],
+  strings: ["Future Leaders", "Problem Solvers", "Global Innovators", "Inspired Creators"],
   typeSpeed: 70,
   backSpeed: 35,
   startDelay: 500,
@@ -116,10 +116,6 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 })
-// issue : in dev tool using the toggle open/close, when going back to the normal screen
-// size it will not show the nav-menu bascially it acts as if it was 1024px meaning it still applies the media query
-
-
 
 // reveal on scroll
 AOS.init({
@@ -129,6 +125,8 @@ AOS.init({
 
 // show/hide menu
 
+// issue : in dev tool using the toggle open/close, when going back to the normal screen
+// size it will not show the nav-menu bascially it acts as if it was 1024px meaning it still applies the media query
 
 const menu = document.querySelector(".nav-menu")
 const menuOpenBtn = document.querySelector("#open-menu-btn")

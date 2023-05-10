@@ -4,6 +4,7 @@ const main = document.querySelector("main");
 const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
 
+// register and login switching
 inputs.forEach((inp) => {
   inp.addEventListener("focus", () => {
     inp.classList.add("active");
@@ -20,6 +21,7 @@ toggle_btn.forEach((btn) => {
   });
 });
 
+// slider
 function moveSlider() {
   let index = this.dataset.value;
 

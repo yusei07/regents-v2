@@ -13,7 +13,7 @@
   content: "";
 
   position: absolute;
-  top: 35%;
+  top: 50%;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -42,7 +42,6 @@
 }
 
 .admission-text {
-  /* margin-bottom: -2rem; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -115,7 +114,7 @@ mark {
 /* ----------- media query (tablet) ----------- */
 @media screen and (max-width: 1024px) {
   #admission {
-    height: auto;
+    height: 100%;
   }
 
   .admission-container {
@@ -129,8 +128,22 @@ mark {
 
 /* ----------- media query (phone) ----------- */
 @media screen and (max-width: 600px) {
+  #admission .admission-container {
+    height: 100vh;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .admission-text {
+    display: flex;
+    justify-content: center;
+    width: var(--container-width-sm);
+    margin-bottom: 6rem;
+  }
+
   .child-intro-img {
-    left: 6%;
+    width: var(--container-width-sm);
+    left: -26%;
   }
 
   .child-intro-img img {
@@ -140,6 +153,13 @@ mark {
   .introBtn {
     width: 8rem;
     padding: 0.9rem 1rem;
+  }
+
+  .aurora-bg::before {
+    top: 55%;
+    left: -26%;
+    width: 140%;
+    height: 100%;
   }
 
 }

@@ -31,12 +31,12 @@
 }
 
 .about-header-right h3 {
-  color: var(--primaryColor1);
+  color: var(--primaryColor2);
   margin-bottom: 0.5rem;
 }
 
 .about-header-right p {
-  color: var(--primaryColor1);
+  color: var(--primaryColor2);
 }
 
 .radial-bg1::before {
@@ -296,11 +296,12 @@
 @media screen and (max-width: 600px) {
   .about {
     height: auto;
-    padding-top: 5rem;
+    padding-top: 6rem;
   }
 
   .about-header-container {
     grid-template-columns: 1fr;
+    justify-content: center;
     place-items: center;
     gap: 1.5rem;
   }
@@ -310,10 +311,11 @@
   }
 
   .about-header-left img {
-    width: 25rem;
+    width: 21rem;
   }
 
   .about-header-right {
+    width: 99%;
     text-align: center;
   }
 

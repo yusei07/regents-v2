@@ -253,6 +253,7 @@ header {
 
 .intro-title h1 {
   color: var(--bgColor1);
+  margin-bottom: 1rem;
 }
 
 .intro-text h4 {
@@ -586,7 +587,6 @@ span.swiper-pagination-bullet {
     backdrop-filter: blur(1rem);
     visibility: hidden;
     /* transition: animateNavItems 350ms ease-out; */
-    height: 100%;
   }
 
   .nav-menu li {
@@ -711,6 +711,7 @@ span.swiper-pagination-bullet {
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
+    overflow-x: hidden;
   }
 
   /* ----------- navbar section ----------- */
@@ -719,7 +720,8 @@ span.swiper-pagination-bullet {
   }
 
   .nav-menu {
-    /* margin-bottom: 15rem; */
+    margin-bottom: 1rem;
+    height: 100vh;
   }
 
   /* temp solution to make nav menu center */
@@ -728,14 +730,27 @@ span.swiper-pagination-bullet {
 
   header {
     height: 100%; /* or vh (?) */
-    /* width: 100vw; */
   }
 
-  .header-container {
+  /*
+  fixed issue of weird white line:
+  caused by container not filling the entire width of the page
+
+  used a higher specificity to force only header
+  to have a width of 100%
+  */
+  header .header-container {
     grid-template-columns: 1fr;
+    place-items: center;
     text-align: center;
     margin-top: 0;
     padding-bottom: 3.5rem;
+    width: 100%;
+  }
+
+  .header-left,
+  .header-right {
+    width: var(--container-width-sm);
   }
 
   .header-left p {
@@ -783,6 +798,7 @@ span.swiper-pagination-bullet {
     justify-content: center;
     padding-bottom: 5rem;
     padding-top: 8rem;
+    width: 100%;
   }
 
   .intro-vid-text {
@@ -803,16 +819,16 @@ span.swiper-pagination-bullet {
   }
 
   .intro-vid-deco {
-    top: -19%;
-    left: 39%;
+    top: -12.5%;
+    left: 34%;
   }
 
   .intro-vid-deco img {
-    width: 11rem;
+    width: 10rem;
   }
 
   .intro-vid-iframe {
-    margin-top: -14rem;
+    margin-top: -13rem;
     width: 25rem;
     height: 18rem;
   }
