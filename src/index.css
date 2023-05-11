@@ -696,7 +696,7 @@ span.swiper-pagination-bullet {
   /* ----------- footer section ----------- */
 
   .footer-container {
-    grid-template-columns: 1fr 1fr; /* it seems to ignore this */
+    grid-template-columns: 1fr 1fr; 
     gap: 4rem;
   }
 

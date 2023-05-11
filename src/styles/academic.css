@@ -252,11 +252,17 @@
 
 /* ----------- media query (phone) ----------- */
 @media screen and (max-width: 600px) {
+  .academic-wrapper {
+    background: none
+  }
+
   .academic-container {
     grid-template-columns: 1fr;
     background: linear-gradient(180.45deg, #A9B8EE -4.79%, rgba(217, 217, 217, 0) 134.88%);
     width: 100%;
     justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;
   }
 
   .academic-header-left {

@@ -258,6 +258,7 @@
     flex-direction: column;
     text-align: center;
     width: 35rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .card h4,

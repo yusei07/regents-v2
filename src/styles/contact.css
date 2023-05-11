@@ -70,13 +70,14 @@
 
 .contact-socials {
   display: flex;
+  align-items: center;
   gap: 0.8rem;
   margin-top: 3rem;
 }
 
 .contact-socials a {
-  background: rgba(237, 240, 244, 0.25);
-  padding: 0.7rem;
+  background: rgba(237, 240, 244, 0.8);
+  padding: 0.6rem 0.8rem;
   border-radius: 50%;
   font-size: 1rem;
   transition: 300ms ease;

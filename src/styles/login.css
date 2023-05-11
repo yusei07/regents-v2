@@ -281,9 +281,9 @@ main.sign-up-mode .carousel {
 }
 
 @media (max-width: 850px) {
-  main {
-    margin: 6rem
-  }
+  /* main { */
+  /*   margin: 5rem 0; */
+  /* } */
 
   .box {
     height: auto;
@@ -347,7 +347,7 @@ main.sign-up-mode .carousel {
 @media (max-width: 530px) {
   main {
     padding: 1rem;
-    margin: 5rem 0 2.5rem 0;
+    margin: 2.5rem 0;
   }
 
   .box {

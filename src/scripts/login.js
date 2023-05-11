@@ -1,3 +1,36 @@
+// mobile navbar
+
+const menu = document.querySelector(".nav-menu")
+const menuOpenBtn = document.querySelector("#open-menu-btn")
+const menuCloseBtn = document.querySelector("#close-menu-btn")
+const menuSignIn = document.querySelector("#menu-login")
+
+menuOpenBtn.addEventListener('click', () => {
+  menu.style.display = 'flex';
+  menu.style.visibility = 'visible';
+
+  menuSignIn.style.display = 'inline-block';
+  menuSignIn.style.visibility = 'visible';
+
+  menuCloseBtn.style.display = 'inline-block';
+  menuCloseBtn.style.visiblity = 'visible';
+  menuOpenBtn.style.display = 'none';
+})
+
+const closeNav = () => {
+  menu.style.display = 'none';
+  menu.style.visibility = 'hidden';
+
+  menuSignIn.style.display = 'none';
+  menuSignIn.style.visibility = 'visible';
+
+  menuCloseBtn.style.display = 'none';
+  menuOpenBtn.style.display = 'inline-block';
+}
+
+menuCloseBtn.addEventListener('click', closeNav)
+
+
 const inputs = document.querySelectorAll(".input-field");
 const toggle_btn = document.querySelectorAll(".toggle");
 const main = document.querySelector("main");
@@ -39,35 +72,3 @@ function moveSlider() {
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", moveSlider);
 });
-
-// mobile navbar
-
-const menu = document.querySelector(".nav-menu")
-const menuOpenBtn = document.querySelector("#open-menu-btn")
-const menuCloseBtn = document.querySelector("#close-menu-btn")
-const menuSignIn = document.querySelector("#menu-login")
-
-menuOpenBtn.addEventListener('click', () => {
-  menu.style.display = 'flex';
-  menu.style.visibility = 'visible';
-
-  menuSignIn.style.display = 'inline-block';
-  menuSignIn.style.visibility = 'visible';
-
-  menuCloseBtn.style.display = 'inline-block';
-  menuCloseBtn.style.visiblity = 'visible';
-  menuOpenBtn.style.display = 'none';
-})
-
-const closeNav = () => {
-  menu.style.display = 'none';
-  menu.style.visibility = 'hidden';
-
-  menuSignIn.style.display = 'none';
-  menuSignIn.style.visibility = 'visible';
-
-  menuCloseBtn.style.display = 'none';
-  menuOpenBtn.style.display = 'inline-block';
-}
-
-menuCloseBtn.addEventListener('click', closeNav)

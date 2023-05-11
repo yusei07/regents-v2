@@ -1,5 +1,6 @@
-const weblink = encodeURI(window.location.href);
-const msg = encodeURIComponent('Hellow regents school! i\'d like to ask a question');
+const webLink = encodeURI(window.location.href);
+const phoneNum = "6281909000033"
+const msg = encodeURIComponent('Hellow Regents School !!');
 // const title = encodeURIComponent('Title Here');
 
 // const fb = document.querySelector('.facebook');
@@ -12,7 +13,9 @@ const msg = encodeURIComponent('Hellow regents school! i\'d like to ask a questi
 // linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${weblink}`;
 
 const whatsapp = document.querySelector('#whatsapp');
-whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${weblink}`;
+whatsapp.href = `https://wa.me/${phoneNum}/?text=${msg}`
+// https://api.whatsapp.com/send/?phone=6281909000033&text&type=phone_number&app_absent=0
+// whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${weblink}`;
 
 const menu = document.querySelector(".nav-menu")
 const menuOpenBtn = document.querySelector("#open-menu-btn")
