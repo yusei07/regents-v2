@@ -58,8 +58,15 @@
   background: var(--bgColor1);
   color: var(--secondaryColor2);
   width: 8rem; 
-  padding: 1rem;
+  padding: 1rem 1.2rem;
   border-radius: 8px;
+  transition: 300ms ease;
+}
+
+.read-btn:hover {
+  background: none;
+  outline: 2px solid var(--bgColor1);
+  color: var(--bgColor1);
 }
 
 /* ----------- programs section ----------- */
@@ -171,6 +178,13 @@
   width: 8rem; 
   padding: 1rem 1.25rem;
   border-radius: 8px;
+  transition: 300ms ease;
+}
+
+.apply-btn:hover {
+  background: none;
+  color: var(--secondaryColor2);
+  outline: 2px solid var(--secondaryColor2);
 }
 
 .learn-btn {
@@ -178,6 +192,12 @@
   outline: 2px solid var(--secondaryColor2);
   padding: 0.9rem 1.25rem;
   border-radius: 8px;
+  transition: 300ms ease;
+}
+
+.learn-btn:hover {
+  background: var(--secondaryColor2);
+  color: var(--bgColor1);
 }
 
 
